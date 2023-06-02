@@ -1,0 +1,10 @@
+---
+- name: Apache Server Installed
+  host: database
+  become: yes
+  tasks:
+  - name: latest Apache Server Installed
+    yum: 
+	  name: postgresql.i686
+	  state: latest
+	  
